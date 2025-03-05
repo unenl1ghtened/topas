@@ -6,22 +6,22 @@
     <title>
       Интересное о ТОПАС | Купить септик ТОПАС в Краснодаре и Краснодарском крае
     </title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
     <!-- <link rel="stylesheet" href="css/bootstrap-grid.min.css"> -->
-    <link rel="stylesheet" href="./quiz/quiz.css" />
-    <link rel="stylesheet" type=".text/css" href="/css/owl.theme.default.css" />
-    <link rel="stylesheet" type=".text/css" href="/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/quiz/quiz.css" />
+    <link rel="stylesheet" type="text/css" href="/css/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="/css/owl.carousel.min.css" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="./css/jquery.fancybox.min.css"
+      href="/css/jquery.fancybox.min.css"
     />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/stylearticles.css" />
-    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/style-2.css" />
+    <link rel="stylesheet" href="/css/stylearticles.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
 
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="./css/style-2.css" />
 
     <!-- слайдер -->
     <link
@@ -1944,12 +1944,19 @@
       window.addEventListener("load", updateGalleryStyle);
       window.addEventListener("resize", updateGalleryStyle);
 
+
+      // Слайдер галереи
       document.addEventListener("DOMContentLoaded", function () {
         var mainSlider = new Splide("#big-slider", {
           type: "fade",
           rewind: true,
           pagination: false,
           arrows: false,
+          perPage: 1, 
+          focus: "center",
+          autoWidth: false,
+          autoHeight: true,
+          trimSpace: false,
         }).mount();
 
         var thumbSlider = new Splide("#thumbnail-slider", {
