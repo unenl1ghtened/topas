@@ -1,0 +1,562 @@
+a,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ======ХЛЕБНЫЕ КРОШКИ====== */
+.breadcrumbs {
+  padding: 45px 0 10px;
+}
+
+.t758__list {
+  display: flex;
+  row-gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.t758__list_item::before {
+  display: none;
+}
+.t758__list_item {
+  margin-right: 10px;
+}
+
+.t758__breadcrumb-divider {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.t-menu__link-item {
+  text-decoration: none;
+  color: #333;
+}
+
+.t-menu__link-item_active {
+  font-weight: bold;
+  color: #000;
+}
+
+.t758__link-item__wrapper {
+  display: inline-block;
+}
+
+.t758__breadcrumb-divider {
+  display: inline-block;
+}
+
+/* =========ВВОДНЫЙ БЛОК========= */
+
+.intro__text {
+  padding: 65px 0 0;
+}
+
+.intro__title {
+  font-size: 35px;
+}
+
+.title {
+  font-size: 48px;
+  line-height: 1.5;
+  font-weight: bold;
+}
+
+.title__highlight {
+  color: rgb(23, 132, 232);
+}
+
+.description {
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+/* ======КАРТОЧКА ПРОДУКТА====== */
+
+.catalog {
+  padding: 65px 0;
+}
+.row {
+  margin: initial;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(296px, 1fr));
+  grid-gap: 30px;
+  grid-template-rows: max-content;
+}
+.list-item {
+  border-radius: 20px;
+  height: 100%;
+  box-shadow: 0 4px 12px #d4d4d4;
+  padding: 25px 15px;
+}
+
+.product-link {
+  text-decoration: none;
+  color: #000;
+}
+
+.product-name {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.product-info {
+  margin-top: 10px;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.product-price {
+  margin-top: 15px;
+  align-items: flex-end;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.old-price {
+  color: #aaa;
+  position: relative;
+  display: inline-block;
+}
+.old-price::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 9px;
+  height: 2px;
+  background: #e03f3f;
+}
+
+.new-price > span {
+  color: #21c431;
+}
+
+.star-rating {
+  overflow: hidden;
+  position: relative;
+  width: 93px;
+  height: 1.2em;
+  line-height: 1.2em;
+  display: flex;
+  justify-self: center;
+  font-size: 20px;
+  margin: 0 auto;
+}
+.star-rating:before {
+  content: "\2605\2605\2605\2605\2605";
+  color: #dadada;
+  float: left;
+  top: 0;
+  left: 0;
+  position: absolute;
+  letter-spacing: 2px;
+}
+.star-rating span:before {
+  content: "\2605\2605\2605\2605\2605";
+  top: 0;
+  position: absolute;
+  left: 0;
+  color: #fead3a;
+  letter-spacing: 2px;
+}
+.product-description {
+  margin: 0 auto 10px auto;
+  font-size: 0.9rem;
+  color: #777;
+  max-width: 95%;
+}
+.product-description > p {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 40px;
+  border-bottom: 1px solid #efefef;
+}
+.product-description > p > span:nth-child(2) {
+  font-weight: 700;
+}
+
+.product-info .yellow {
+  font-weight: 400;
+  text-shadow: 0 0 0 #000;
+}
+.yellow {
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fdc80f;
+  box-shadow: 0 2px 2px #777;
+  display: flex;
+  border: none;
+  align-items: center;
+  padding: 0 20px;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-weight: 700;
+  min-height: 40px;
+  transition: all 0.3s;
+  width: max-content;
+}
+.product-info .yellow:hover {
+  background-color: #ecf96a;
+}
+.product-info .row {
+  justify-content: space-around;
+}
+.tags {
+  list-style: none;
+  font-size: 0.8rem;
+  margin-top: 25px;
+}
+.tags li {
+  color: #516585;
+  display: inline-block;
+  transition: all 0.3s;
+}
+.tags li span {
+  color: #082453;
+}
+.similar {
+  margin-top: 10px;
+}
+.similar li a {
+  list-style: none;
+  color: #2783bb;
+  margin-bottom: 10px;
+}
+/* =====СТРАНИЦА ОТКРЫТОГО ТОВАРА=== */
+#gallery {
+  max-width: 43%;
+}
+#big-slider {
+  height: 432px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+.halves__container {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding-bottom: 32px;
+}
+.halves {
+  margin-bottom: 40px;
+  grid-gap: 30px;
+}
+.pictures,
+.info {
+  display: inline-block;
+}
+.info {
+  width: 50%;
+}
+.big-slider img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.splide__track--fade > .splide__list > .splide__slide.is-active {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.thumbnail-slider {
+  width: 100%;
+}
+.thumbnail-slider img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: opacity 0.3s;
+}
+.thumbnail-slider img:hover {
+  opacity: 0.7;
+}
+.splide__list {
+  gap: 15px;
+}
+.splide__track--nav > .splide__list > .splide__slide.is-active {
+  border: 1px solid #efefef !important;
+  border-radius: 6px;
+}
+.splide__slide img {
+  max-width: 420px;
+  max-height: 420px;
+  object-fit: cover;
+}
+
+.headline {
+  margin-bottom: 15px;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+.prices {
+  align-items: flex-end;
+  margin-bottom: 12px;
+}
+.old {
+  font-size: 1.2rem;
+  margin-right: 30px;
+  padding-bottom: 5px;
+  color: #aaa;
+  position: relative;
+}
+.old::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 9px;
+  height: 2px;
+  background: #e03f3f;
+}
+.p1 {
+  font-size: 26px;
+}
+.p1.grn #product_price {
+  color: #21c431;
+  font-size: 36px;
+  font-weight: 700;
+}
+.bet {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.delivery {
+  width: 238px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+.delivery > span {
+  height: 50px;
+  width: 50px;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+  margin-right: 10px;
+  padding-left: 0;
+  background-image: url(https://septiki-krasnodar.com/static/images/product/delivery.png);
+  animation-name: dyby;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.delivery > span,
+.installment {
+  height: 50px;
+  padding-left: 67px;
+  background-position: left center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.installment {
+  cursor: pointer;
+  background-image: url(https://septiki-krasnodar.com/static/images/product/installment.png);
+}
+.yellow.one-click,
+.yellow.consult {
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+  width: 100%;
+  max-width: 238px;
+  margin-bottom: 15px;
+  transition: box-shadow 0.3s;
+}
+.yellow.consult {
+  color: #529cc9;
+  border: 2px solid #529cc9;
+  background-color: transparent;
+}
+.yellow.one-click:hover,
+.yellow.consult:hover {
+  box-shadow: 0 1px 1px #777;
+}
+.chars > b {
+  display: block;
+  margin: 12px 0;
+}
+.chars p {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-gap: 15px;
+  line-height: 140%;
+  font-size: 0.9rem;
+  color: #3d557e;
+  border-bottom: 1px solid #ededed;
+  padding: 5px 0;
+}
+.chars p span:last-child {
+  color: #000;
+}
+.js-buy {
+  background-color: #529cc9;
+  color: #fff;
+  transition: box-shadow 0.3s;
+}
+.js-buy:hover {
+  box-shadow: 0 1px 1px #777;
+}
+
+/* =====ПЕРЕКЛЮЧАТЕЛИ ДЛЯ ОПИСАНИЯ======= */
+.nav-tabs {
+  border-top: 3px solid #2783bb;
+  margin-bottom: 5px;
+  border-bottom: 0;
+  justify-content: center;
+}
+.nav-item {
+  width: 24%;
+}
+.nav-link {
+  width: 100%;
+}
+.nav-tabs .nav-link {
+  color: #2783bb;
+  background: rgba(39, 131, 187, 0.1);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+.nav-tabs {
+  gap: 5px !important;
+}
+.nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background: rgba(39, 131, 187, 1);
+  color: #fff;
+}
+.tab-pane {
+  background-color: #e9f2f8;
+  padding: 10px;
+  border-radius: 10px;
+  text-align-last: left;
+}
+.tab-content img {
+  max-width: 100%;
+  object-fit: cover;
+}
+/* =======РЕКОМЕНДОВАННЫЕ ТОВАРЫ===== */
+
+.recommend {
+  padding: 60px 0;
+}
+
+/* =======МЕДИА ЗАПРОСЫ======== */
+@media (max-width: 1200px) {
+  #gallery {
+    max-width: none;
+  }
+  .halves__container {
+    justify-content: center;
+  }
+  .galery {
+    max-width: 80% !important;
+  }
+
+  .info {
+    width: 100%;
+  }
+  .info .headline {
+    text-align: center;
+  }
+  .info .prices {
+    justify-content: center;
+  }
+  .info .bet {
+    justify-content: space-around;
+  }
+  .splide__track--fade > .splide__list > .splide__slide.is-active {
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  .title {
+    font-size: 42px;
+    line-height: 45px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-tabs {
+    flex-direction: column;
+  }
+  .nav-item {
+    width: 100%;
+  }
+  .nav-tabs .nav-link {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 768px) {
+  #galery {
+    max-width: 80% !important;
+  }
+  .t758__list {
+    justify-content: center;
+  }
+
+  .display-4 {
+    font-size: 36px;
+  }
+
+  .lead {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .header__phone {
+    justify-content: left;
+  }
+  .header__phone a {
+    font-size: 18px;
+  }
+  .t758__breadcrumb-divider {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+
+  .display-4 {
+    font-size: 28px;
+  }
+
+  .lead {
+    font-size: 14px;
+  }
+
+  .title {
+    font-size: 30px;
+    line-height: 33px;
+  }
+  .big-slider {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 22px;
+    line-height: 23px;
+  }
+  .splide__track--fade > .splide__list > .splide__slide.is-active {
+    justify-content: center;
+  }
+}

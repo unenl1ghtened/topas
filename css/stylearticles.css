@@ -1,0 +1,26 @@
+.panel {
+    margin-top: 75px;
+    position: relative;
+    text-align: center;
+    padding: 0 25px 25px 25px;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    border-radius: 7px 7px;
+    border-bottom: 2px solid #e0e0e0;
+    box-shadow: rgba(33,33,33,.055) 0 4px 24px 5px;
+    transition: all 1s;
+}
+.panel img {
+  position: relative;
+  display: inline-block;
+  margin-top: 15px;
+  max-width: 100%;
+  border: 1px solid #efefef;
+  padding: 5px 5px;
+  background-color: #fff;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+}
+.panel li {
+ line-height: 1.1;
+font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
